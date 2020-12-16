@@ -8,7 +8,7 @@
     <!-- googlefont -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+
     <!-- header -->
     <header>
       <div class="logo-contain">
@@ -68,12 +69,23 @@
       <li class="menulist-unactive">My Favourite</li>
     </ul>
     <ul class="filtor-list">
-      <li class="filtorlist-unactive">Bases</li>
-      <li class="filtorlist-unactive">Protein</li>
-      <li class="filtorlist-unactive">Sides</li>
+      <li class="filtorlist-unactive">Low Carb</li>
+      <li class="filtorlist-unactive">Standard</li>
+      <li class="filtorlist-unactive">High Protein</li>
+      <li class="filtorlist-unactive">High Carb</li>
+      <li class="filtorlist-unactive">Keto</li>
     </ul>
     <div class="food-contain">
-      <h1>Bases (Starches)</h1>
+      <div class="food-contain-header">
+        <h1>Bases (Starches)</h1>
+        <div class="Add-Portion-contain">
+          <p>Add 2 Portions</p>
+          <span>!</span>
+        </div>
+        <div class="comment-add-portion">
+          <p>Each Portion of item</p>
+        </div>
+      </div>
       <span class="line-menu"></span>
       <!-- food item -->
       <div class="foodshow-contain">
@@ -81,9 +93,30 @@
           <p>KT</p>
         </div>
         <div class="img-foodshow-contain">
+          <div class="food-describe-hover">
+            <div class="food-describe-hover-contain">
+              <ul>
+                <li>PRO</li>
+                <li>29.5G</li>
+              </ul>
+              <ul>
+                <li>FAT</li>
+                <li>12.4G</li>
+              </ul>
+              <ul>
+                <li>CARB</li>
+                <li>16.5G</li>
+              </ul>
+              <ul>
+                <li>CAl</li>
+                <li>313C</li>
+              </ul>
+            </div>
+          </div>
           <img src="public\img\Group58.png" alt="">
         </div>
         <div class="contentfoodshow-contain">
+          <span id="note-contain">!</span>
           <h2>Pork Tenderloin</h2>
           <h3>50.00 ฿</h3>
           <div class="Add-btn">

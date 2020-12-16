@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>LimitLess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- googlefont -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- iconify -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- pretty checkbox -->
+  <link rel='stylesheet' href='  https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css' />
+
+  <!-- style -->
+  <link rel='stylesheet' href='style/style.css' />
+
+</head>
+
+<body>
+
+
+
+  <!-- popup-comparison -->
+  <section class="popupcomparison-section">
+    <form>
+      <div class="popupcomparison-contain">
+        <h1>Your Order</h1>
+        <div class="menu-select-contain delivery-popup">
+          <h4>1 X</h4>
+          <div class="Menu-describe-contain">
+            <h2>Pork Tenderloin</h2>
+            <ul class="menu-popup-describe delivery-popup-describe">
+              <li>
+                <p>PRO</p>
+                <p>29.5G</p>
+              </li>
+              <li>
+                <p>FAT</p>
+                <p>12.4G</p>
+              </li>
+              <li>
+                <p>CARB</p>
+                <p>16.5G</p>
+              </li>
+              <li>
+                <p>CAL</p>
+                <p>313C</p>
+              </li>
+            </ul>
+            <p>+ Seasoning 1</p>
+            <p>+ Seasoning 1</p>
+          </div>
+          <h5>300 ฿</h5>
+        </div>
+        <div class="menu-select-contain delivery-popup">
+          <h4>1 X</h4>
+          <div class="Menu-describe-contain">
+            <h2>Pork Tenderloin</h2>
+            <ul class="menu-popup-describe delivery-popup-describe">
+              <li>
+                <p>PRO</p>
+                <p>29.5G</p>
+              </li>
+              <li>
+                <p>FAT</p>
+                <p>12.4G</p>
+              </li>
+              <li>
+                <p>CARB</p>
+                <p>16.5G</p>
+              </li>
+              <li>
+                <p>CAL</p>
+                <p>313C</p>
+              </li>
+            </ul>
+            <p>+ Seasoning 1</p>
+            <p>+ Seasoning 1</p>
+          </div>
+          <h5>300 ฿</h5>
+        </div>
+      </div>
+      <div class="Delivery-summary-contain">
+        <h2>Do you have a coupon?</h2>
+        <div>
+          <p>Subtotal</p>
+          <p>500.00฿</p>
+        </div>
+        <div class="discount-summary">
+          <p>Discount</p>
+          <p>-50.00 ฿</p>
+        </div>
+        <div>
+          <p>Shipping</p>
+          <p>50.00 ฿</p>
+        </div>
+        <div class="vat-summary">
+          <p>Total <span>(Incl.VAT)</span></p>
+          <p>500.00 ฿</p>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- end of popup-comparison -->
+
+
+  <!-- header -->
+  <header>
+    <div class="logo-contain">
+      <img src="public\img\logo.png" alt="">
+    </div>
+    <div class="Top-Mainmenu-contain">
+      <div class="menu">
+        <a href="#">Menu</a>
+      </div>
+      <div class="menu">
+        <a href="#">TDEE Calculator</a>
+      </div>
+      <div class="menu">
+        <a href="#">About Us</a>
+      </div>
+    </div>
+    <div class="Top-Mainmenu-contain2">
+      <div class="Login-Signup-button">
+        <i class="far fa-user-circle"></i>
+        <p>Login / Sign up</p>
+      </div>
+      <div class="shopping-bag-contain">
+        <span class="iconify iconify-modify" data-icon="clarity:shopping-bag-line" data-inline="false"></span>
+      </div>
+      <div class="languange-change-contain">
+        <span class="iconify iconify-modify thailang-icon" data-icon="emojione:flag-for-thailand" data-inline="false"></span>
+        <div class="line-languange">
+        </div>
+        <span class="iconify iconify-modify" data-icon="emojione:flag-for-us-outlying-islands" data-inline="false"></span>
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <!-- menu section -->
+  <section class="Delivery-section">
+    <form class="delivery-contain">
+      <div class="deliverydetails-contain">
+
+        <div class="delivery-header-contain">
+          <h1>Delivery Details</h1>
+          <div class="">
+            <h2>Order by</h2>
+            <select class="orderby-list" name="orderby-list">
+              <option value="Date">Date</option>
+              <option value="Week">Week</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="delivery-time-contain">
+          <h2>Delivery time:</h2>
+          <div class="delivery-time-select">
+            <select class="orderby-list time-delivery" name="time-delivery">
+              <option value="Date">Sun, Nov 22</option>
+            </select>
+            <select class="orderby-list time-delivery" name="time-delivery">
+              <option value="Date">11:30 AM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="deliveryaddress-contain">
+          <h2>Delivery address:</h2>
+          <div class="deliveryaddress-text">
+            <span class="iconify icon-adress" data-icon="zondicons:location" data-inline="false"></span>
+            <div>
+              <h1>Home</h1>
+              <p>160 Phatthanakan Rd,Khwaeng Prawet, Khet Prawet,Krung Thep Maha Nakhon 10250</p>
+              <p><b>Delivery note: </b> none</p>
+            </div>
+            <div class="edit-btn-contain">
+              <span class="iconify icon-deli" data-icon="clarity:pencil-line" data-inline="false"></span>
+              <span class="iconify icon-deli" data-icon="ant-design:delete-outlined" data-inline="false"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="deliverydetails-contain">
+        <div class="delivery-header-contain">
+          <h1>Personal Details</h1>
+        </div>
+        <div class="deliveryaddress-contain">
+          <div class="deliveryaddress-text Personal-text">
+            <div>
+              <h1>John Snow</h1>
+              <p>johnsnow@gmail.com</p>
+              <p>j+66 945673961</p>
+            </div>
+            <div class="edit-btn-contain">
+              <span class="iconify icon-deli" data-icon="clarity:pencil-line" data-inline="false"></span>
+              <span class="icon-deli edit-text">Edit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deliverydetails-contain">
+        <div class="delivery-header-contain">
+          <h1>Payment</h1>
+        </div>
+        <div class="payment-contain">
+          <input type="text" name="" value="" placeholder="First Name and Lastname">
+          <input type="text" name="" value="" placeholder="Credit Card Number">
+          <div class="expire-credit-contain">
+            <input type="text" name="" value="" placeholder="Expiration Date">
+            <input type="text" name="" value="" placeholder="Security">
+          </div>
+          <p>Card Type</p>
+          <div class="img-creditcard">
+            <img src="public\img\mastercard.svg" alt="">
+          </div>
+        </div>
+        <div class="placeorder-submit-contain">
+
+          <div class="pretty p-icon p-curve check-credit-contain">
+            <input type="checkbox" />
+            <div class="state p-success">
+              <i class="icon iconify" data-icon="bx:bx-check" data-inline="false"></i>
+              <label>I agree to <span>Payment Terms.</span></label>
+            </div>
+          </div>
+
+          <div class="pretty p-icon p-curvecheck-credit-contain">
+            <input type="checkbox" />
+            <div class="state p-success">
+              <i class="icon iconify" data-icon="bx:bx-check" data-inline="false"></i>
+              <label>I agree to <span>Terms & Conditions.</span></label>
+            </div>
+          </div>
+
+          <button class="placeorder-btn" type="button" name="button">Place Order</button>
+
+        </div>
+      </div>
+    </form>
+
+  </section>
+  <!--end of  menu section -->
+
+
+  <!-- footer -->
+  <footer>
+    <div class="banner-footer">
+      <div class="img-bannerfooter">
+        <img src="public\img\limitbanner.png" alt="">
+      </div>
+      <p>Copyright © 2020. Limitless. All rights reserved.</p>
+    </div>
+    <ul class="menufooter">
+      <li>
+        <p>Menu</p>
+      </li>
+      <li>
+        <p>TDEE Calculator</p>
+      </li>
+      <li>
+        <p>Profile</p>
+      </li>
+      <li>
+        <p>Login / Sign up</p>
+      </li>
+      <li>
+        <p>Cart</p>
+      </li>
+    </ul>
+    <ul class="menufooter">
+      <li>
+        <p>About Us</p>
+      </li>
+      <li>
+        <p>Terms of use</p>
+      </li>
+      <li>
+        <p>Privacy Policy</p>
+      </li>
+      <li>
+        <p>Contact us</p>
+      </li>
+      <li>
+        <p>FAQs</p>
+      </li>
+    </ul>
+    <div class="social-contact">
+      <span class="iconify iconify-social" data-icon="brandico:facebook" data-inline="false"></span>
+      <span class="iconify iconify-social" data-icon="ant-design:twitter-outlined" data-inline="false"></span>
+      <span class="iconify iconify-social" data-icon="ant-design:instagram-outlined" data-inline="false"></span>
+    </div>
+  </footer>
+  <!-- end of footer -->
+</body>
+
+</html>
