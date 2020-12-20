@@ -38,6 +38,7 @@ header div {
 }
 
 .Top-Mainmenu-contain {
+  width: 100%;
   display: flex;
 }
 
@@ -54,11 +55,15 @@ header div {
   width: 100%;
 }
 
+.menu{
+  display: flex;
+  align-items: center;
+}
+
 .menu a {
   font-size: 1.6rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
-  margin: 0 2rem;
 }
 
 .menu a:hover {
@@ -218,23 +223,29 @@ header div {
 
 /* set your goal section */
 /* Herosection */
+.hero-section{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20rem 1fr 20rem;
+}
 .hero-section h1 {
+  grid-column: 1 / -1;
   font-size: 4.8rem;
   font-weight: normal;
 }
 
 .menu-contain {
+  width: 100%;
+  box-sizing: border-box;
   margin: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
-  padding: 1rem 20rem;
 }
 
 .heromenu {
+  padding: 3rem 0;
   width: 100%;
-  padding: 3rem 5rem;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,6 +273,7 @@ header div {
 /* End of Herosection */
 /* trust */
 .trust-contain {
+  width: 100%;
   margin: 10rem 0;
 }
 
@@ -271,7 +283,13 @@ header div {
 }
 
 .imgtrust-contain {
+  width: 100%;
   margin: 2rem 0;
+  box-sizing: border-box;
+  padding: 0 20rem;
+}
+.imgtrust-contain img{
+  width: 100%;
 }
 
 /* end of trust */
@@ -306,7 +324,12 @@ header div {
   text-align: left;
   color: #464646;
 }
-
+.img-why-contain{
+  width: 100%;
+}
+.img-why-contain img{
+  width: 100%;
+}
 .whylimitless-content h3 {
   font-size: 1.6rem;
   text-align: left;
@@ -1740,13 +1763,233 @@ footer p {
 
 
 /* Dashboard section */
+/* order */
 .Dashboard-section{
-  margin-top: 8rem;
+  margin-top: 12rem;
   display: grid;
   width: 100%;
-  grid-template-columns: 35rem auto 35rem;
+  grid-template-columns: 20rem auto 20rem;
+}
+.Dashboard-section *{
+  font-family: 'Montserrat', sans-serif;
 }
 .Dashboard-contain{
   grid-column: 2 / 3;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 4fr;
 }
+.Dashboard-menu-contain{
+  display: flex;
+  flex-direction: column;
+}
+.Dashboard-menu-contain *{
+  text-align: left;
+}
+.Dashboard-menu-contain ul li{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 4rem;
+  margin: 0.5rem 0;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Dashboard-menu-contain ul li:hover{
+  background-color: #94ffd7;
+  color: #23B57E;
+}
+.Dashboard-menu-contain ul li p{
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.Dashboard-menu-contain h2{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: rgba(225, 29, 65, 1)
+}
+.Dashboard-menu-contain h3{
+  font-weight: normal;
+  font-size: 1.8rem;
+  width: 100%;
+  border-bottom: 2px solid rgb(42, 193, 71);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.icon-menu-dashboard{
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.dashboard-content-contain{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2rem;
+  margin-top: 0;
+  padding: 3rem 4rem;
+  box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.13);
+  border-radius: 17px;
+  position: relative;
+}
+.dashboard-content-contain ul{
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr repeat(5,1fr) 3fr 3fr 2fr;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.dashboard-content-contain ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-content-contain h1{
+  font-family: 'Cardo', serif;
+  font-size: 3.2rem;
+  text-align: left;
+}
+.dashboard-content-contain h2{
+  color: rgb(172, 172, 172);
+  text-align: left;
+  font-size: 2.4rem;
+  margin: 3rem 0;
+}
+.topic-order-contain{
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(185, 185, 185);
+}
+.topic-order-contain-list{
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.topic-order-contain-list li:not(.status-li){
+  border-right: 2px solid rgb(185, 185, 185);
+}
+.ontheway-status{
+  background-color: #F2C42C;
+  padding: 0.5rem 0.5rem;
+  color: #ffffff;
+}
+.confirmedem-status{
+  background-color: rgba(45, 85, 255, 0.79);
+  padding: 0.5rem 0.5rem;
+  color: #ffffff;
+}
+/* end of order */
+
+/* Profile */
+.Edit-profile-btn{
+  background-color: #F2C42C;
+  padding: 1rem 0.5rem;
+  color: #ffffff;
+  width: 10rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Edit-profile-btn:hover{
+  background-color: #bf9300;
+}
+.img-profile-contain{
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem 0;
+}
+.img-profile-contain img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 100%;
+  border: 0.2rem solid rgb(42, 193, 71);
+  padding: 0.5rem;
+}
+.profile-content-contain{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.profile-content-contain h2{
+  font-size: 1.6rem;
+  color: #000000;
+  margin: 1rem 0;
+}
+.profile-content-contain p{
+  font-size: 1.6rem;
+  color: #000000;
+  text-align: left;
+
+}
+.profile-content-contain div{
+  margin-bottom: 2rem;
+}
+.profile-content-contain div:not(.name-profile-contain):not(.Lastname-contain){
+  grid-column: 1 / -1;
+}
+/* end of Profile */
+
+
 /* end of Dashboard section */
+
+
+
+/* Responsive */
+/* Desktop */
+@media screen and (max-width: 1312px) {
+  html{
+    font-size: 55%;
+  }
+  header{
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+  .hero-section{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2rem 1fr 3rem;
+  }
+  .heromenu {
+    padding: 2rem 0;
+  }
+  .menu-img {
+    width: 7rem;
+  }
+  .whylimitless-content {
+    padding: 0;
+  }
+  .imgtrust-contain {
+    width: 100%;
+    margin: 2rem 0;
+    box-sizing: border-box;
+    padding: 0 5rem;
+  }
+}
+/* Desktop */
+@media screen and (max-width: 1025px) {
+
+}
+/* iphone เเนวนอน */
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 750px){
+
+}
+
+/* iphone */
+@media screen and (max-width: 479px){
+
+}
+/*end Responsive */
