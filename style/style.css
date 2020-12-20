@@ -28,30 +28,44 @@ header {
   box-sizing: border-box;
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 20;
   background-color: #ffffff;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+.menu-top-toggle{
+  font-size: 5rem;
+  color: #2b2b2b;
+  display: none;
+}
+
 header div {
-  margin: 0 auto;
 }
 
 .Top-Mainmenu-contain {
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .Top-Mainmenu-contain2 {
   display: flex;
+  justify-content: flex-end;
 }
 
-.logo-contain {
-  width: 13rem;
+.logo-contain{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-contain div {
+  width: 15rem;
   cursor: pointer;
 }
 
-.logo-contain img {
+.logo-contain div img {
   width: 100%;
 }
 
@@ -213,12 +227,14 @@ header div {
 .img-food-contain {
   width: 70%;
   position: absolute;
-  right: 8rem;
-  bottom: 10rem;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
 }
 
 .img-food-contain img {
   width: 100%;
+  object-fit: contain;
 }
 
 /* set your goal section */
@@ -295,6 +311,7 @@ header div {
 /* end of trust */
 /* whylimitless contain */
 .whylimitless-contain {
+  width: 100%;
   background-color: rgba(248, 248, 248, 0.7);
 }
 
@@ -379,6 +396,12 @@ footer p {
 
 .img-bannerfooter {
   text-align: left;
+}
+.img-bannerfooter {
+  width: 50%;
+}
+.img-bannerfooter img {
+  width: 100%;
 }
 
 .social-contact {
@@ -1948,7 +1971,7 @@ footer p {
 /* Desktop */
 @media screen and (max-width: 1312px) {
   html{
-    font-size: 55%;
+    font-size: 62.5%;
   }
   header{
     grid-template-columns: 1fr 2fr 2fr;
@@ -1974,22 +1997,112 @@ footer p {
     box-sizing: border-box;
     padding: 0 5rem;
   }
-}
-/* Desktop */
-@media screen and (max-width: 1025px) {
 
+}
+/* Tablet */
+@media screen and (max-width: 1200px) {
+  html{
+    font-size: 60%;
+  }
+  .img-food-contain {
+    right: 0;
+    top: 55%;
+  }
 }
 /* iphone เเนวนอน */
 @media screen and (max-width: 992px){
+  html{
+    font-size: 50%;
+  }
 
 }
 
 @media screen and (max-width: 750px){
+  Header{
+    grid-template-columns: 2fr 1fr;
+    height: 12rem;
+  }
+  .Setyourgoal-button{
+  }
+  .Login-Signup-button{
+    width: 100%;
+  }
+  .Top-Mainmenu-contain2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .shopping-bag-contain{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo-contain{
+    justify-content: space-between;
 
+  }
+  .menu-top-toggle{
+    display: block;
+  }
+
+  .menu-contain {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .whylimitless-content {
+    grid-template-columns: 1fr;
+  }
+  .whylimitless-content li{
+    margin: 0 auto;
+  }
+  .trust-contain {
+    margin: 4rem 0;
+  }
+  footer {
+    padding: 5rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img-bannerfooter {
+    width: 100%;
+  }
+  .img-food-contain {
+    width: 130%;
+    position: absolute;
+    top: 30rem;
+    right: 0;
+  }
+  .Setyourgoal-contain {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Setyourgoal-content1 h2 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .Setyourgoal-content1 h1 {
+    font-size: 4rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .Setyourgoal-content1 {
+    padding: 2rem;
+  }
+  .Setyourgoal-button{
+    width: 35rem;
+    margin: 0 auto;
+  }
 }
 
 /* iphone */
 @media screen and (max-width: 479px){
-
+  html{
+    font-size: 40%;
+  }
 }
 /*end Responsive */
