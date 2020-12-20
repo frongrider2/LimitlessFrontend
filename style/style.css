@@ -2091,12 +2091,12 @@ footer p {
     width: 150%;
     position: absolute;
     right: 0;
-    top: 18rem;
+    top: 14rem;
     bottom: auto;
   }
   .Setyourgoal-contain {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 2.5fr 2fr;
   }
   .Setyourgoal-content1 h2 {
     margin-top: 2rem;
