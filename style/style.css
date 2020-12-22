@@ -1131,7 +1131,25 @@ footer p {
   right: 0;
   z-index: 19;
 }
-
+.Exitpopup-popupcomparison{
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+.icon-Exitpopup{
+  font-size: 3rem;
+  color: rgba(225, 29, 65, 1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon-Exitpopup:hover{
+  color: rgba(254, 67, 101, 1);
+}
 .popupcomparison-section * {
   font-family: 'Montserrat', sans-serif;
 }
@@ -2010,6 +2028,7 @@ footer p {
   }
   .Setyourgoal-content1{
     padding-right: 1rem;
+    padding-top: 0;
   }
   .Setyourgoal-content1 h2 {
     width: 60%;
@@ -2018,11 +2037,11 @@ footer p {
     width: 100%;
   }
   .img-food-contain {
-    width: 110%;
+    width: 100%;
     position: absolute;
     right: 0;
     top: auto;
-    bottom: 25%;
+    bottom: 5%;
     transform: translateY(0);
   }
 }
@@ -2030,6 +2049,14 @@ footer p {
 @media screen and (max-width: 992px){
   html{
     font-size: 50%;
+  }
+  .img-food-contain {
+    width: 110%;
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: 25%;
+    transform: translateY(0);
   }
 
 }
@@ -2088,10 +2115,10 @@ footer p {
     width: 100%;
   }
   .img-food-contain {
-    width: 150%;
+    width: 120%;
     position: absolute;
     right: 0;
-    top: 14rem;
+    top: 15rem;
     bottom: auto;
   }
   .Setyourgoal-contain {
